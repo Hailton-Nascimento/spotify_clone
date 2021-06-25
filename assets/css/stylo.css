@@ -1,0 +1,198 @@
+:root {
+	--default-green: #1db954;
+	--light-green: #1ed704;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
+/* Utility Classes */
+
+.btn-primary {
+	background: var(--default-green);
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 60px;
+	border: none;
+	border-radius: 30px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: all 400ms ease;
+}
+.btn-primary:hover {
+	background: var(--light-green);
+	cursor: pointer;
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+}
+
+/* Navbar */
+#navbar {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.6);
+	justify-content: center;
+	color: white;
+	position: fixed;
+	width: 100%;
+}
+#navbar .navbar-container {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+#navbar .navbar-container ul {
+	display: flex;
+	list-style: none;
+	font-weight: bold;
+}
+#navbar .navbar-container ul li {
+	padding: 0 20px;
+	transition: all 400ms ease;
+}
+
+#navbar .navbar-container ul li:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+#navbar .navbar-container ul li:nth-child(3) {
+	border-right: 1px solid white;
+}
+/* Showcase */
+
+#showcase {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url("/img/showcase.webp") center center/cover;
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: color;
+}
+#showcase .showcase-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#showcase .showcase-container h2 {
+	font-size: 4rem;
+}
+#showcase .showcase-container p {
+	font-size: 1.1rem;
+	margin: 15px 0;
+}
+
+/* Footer */
+
+#footer {
+	background: black;
+	color: white;
+	padding: 80px 0 40px 0;
+}
+#footer .footer-content {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: space-between;
+}
+#footer .footer-content .footer-menu {
+	list-style: none;
+	margin: 0 40px;
+}
+#footer .footer-content .footer-menu .footer-menu-item {
+	margin: 20px 0;
+	transition: all 400ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+#footer .footer-content .footer-menu p {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #919396;
+	font-size: 0.8rem;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+/* Footer socials */
+
+
+
+.socials {
+	display: flex;
+	margin: 20px 0;
+	align-self: start;
+}
+.socials i {
+	margin: 0 10px;
+	font-size: 1.7rem;
+	border: 1px solid red;
+	width: auto;
+	height: auto;
+	transition: all 400ms ease;
+}
+
+.socials i:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+/* Footer Info */
+
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 80%;
+	margin: auto;
+	font-weight: bold;
+	color: #919396;
+	font-size: 0.75rem;
+	padding-top: 30px;
+}
+.footer-info .footer-info-items {
+	display: flex;
+	list-style: none;
+	margin-right: 10px;
+}
+.footer-info .footer-info-items .footer-info-item {
+	margin: 0 10px;
+	transition: all 400ms ease;
+}
+.footer-info .footer-info-items .footer-info-item:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+.footer-info .rights .country {
+	display: flex;
+	font-size: 0.9rem;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 10px;
+	transition: all 400ms ease;
+}
+.footer-info .rights .country:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+.footer-info .rights .country .brasil-flag {
+	width: auto;
+	height: 20px;
+	display: inline-block;
+	margin-left: 10px;
+}
